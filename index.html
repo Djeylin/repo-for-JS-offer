@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 244, 248);
+            text-align: center;
+            padding-top: 50px;
+
+
+
+        }
+
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+            border: 2px solid rgb(159, 194, 185);
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: rgb(192, 225, 239);
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.10 ease;
+        }
+
+        button:hover {
+            background-color: rgb(110, 141, 159);
+        }
+
+        #result {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #181717;
+            font-weight: bold;
+        }
+    </style>
+
+
+
+
+
+    <script>
+        function showMesagge() {
+
+            let name = document.getElementById("nameinput").value;
+
+            let age = document.getElementById("ageinput").value;
+
+            let color = document.getElementById("colorinput").value;
+
+            let mesagge = "Привет," + name + "! Твой " + age + " возраст и любимый цвет " + color + " этот ,";
+
+            document.getElementById("result").innerText = mesagge
+        }
+        let name = "Ceylin"
+    </script>
+</head>
+
+<body>
+    <label for="">напиши имя</label>
+    <input type="text" id="nameinput"><br><br>
+
+    <label for="">напиши возраст</label>
+    <input type="text" id="ageinput"><br><br>
+
+    <label for="">любимый цвет</label>
+    <input type="text" id="colorinput"><br><br>
+
+    <button onclick="showMesagge()"> покажи</button>
+
+    <p id="result"></p>
+</body>
+
+
+</html>
